@@ -1,10 +1,10 @@
-import 'package:myapp/week08/calender_scheduler/screen/home_screen.dart';
+import 'package:myapp/week08/calendar_scheduler/screen/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/date_symbol_data_local.dart';
-import 'package:myapp/week08/calender_scheduler/database/drift_database.dart';
+import 'package:myapp/week08/calendar_scheduler/database/drift_database.dart';
 import 'package:get_it/get_it.dart';
-import 'package:myapp/week08/calender_scheduler/repository/schedule_repository.dart';
-import 'package:myapp/week08/calender_scheduler/provider/schedule_provider.dart';
+import 'package:myapp/week08/calendar_scheduler/repository/schedule_repository.dart';
+import 'package:myapp/week08/calendar_scheduler/provider/schedule_provider.dart';
 import 'package:provider/provider.dart';
 
 void main() async {
