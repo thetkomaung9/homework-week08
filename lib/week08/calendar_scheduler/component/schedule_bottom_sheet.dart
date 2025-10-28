@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/week08/calender_scheduler/component/custom_text_field.dart';
-import 'package:myapp/week08/calender_scheduler/const/colors.dart';
+import 'package:myapp/week08/calendar_scheduler/component/custom_text_field.dart';
+import 'package:myapp/week08/calendar_scheduler/const/colors.dart';
 import 'package:drift/drift.dart' hide Column;
 import 'package:get_it/get_it.dart';
-import 'package:myapp/week08/calender_scheduler/database/drift_database.dart';
-import 'package:myapp/week08/calender_scheduler/model/schedule_model.dart';
+import 'package:myapp/week08/calendar_scheduler/database/drift_database.dart';
+import 'package:myapp/week08/calendar_scheduler/model/schedule_model.dart';
 import 'package:provider/provider.dart';
-import 'package:myapp/week08/calender_scheduler/provider/schedule_provider.dart';
+import 'package:myapp/week08/calendar_scheduler/provider/schedule_provider.dart';
 
 class ScheduleBottomSheet extends StatefulWidget {
   final DateTime selectedDate;        // 선택된 날짜 상위 위젯에서 입력받기
