@@ -12,6 +12,10 @@ class ScheduleModel {
       required this.startTime,
       required this.endTime,
 
+    });
+
+    ScheduleModel.fromJson({
+      required Map<String, dynamic> json,
     })
-    
+
 }
