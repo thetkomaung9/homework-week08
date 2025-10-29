@@ -111,6 +111,9 @@ class ScheduleProvider extends ChangeNotifier{
     );
     final resp = await repository.deleteSchedule(id: id);
 
-    
+    cache.update(
+      date,
+      (value) => value.where((e) => e.id !=id).toList(),
+    )
   }
 }
