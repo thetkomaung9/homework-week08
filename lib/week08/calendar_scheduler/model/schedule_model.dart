@@ -33,6 +33,14 @@ class ScheduleModel {
         'endTime' : endTime,
       };
     }
-    
-    ScheduleModel
+
+    ScheduleModel copyWith({
+      String? id,
+      String? content,
+      DateTime? date,
+      int? startTime,
+      int? endTime,
+    }) {
+      
+    }
 }
