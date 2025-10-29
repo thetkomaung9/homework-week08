@@ -37,5 +37,9 @@ class ScheduleRepository {
 
   Future<String> deleteSchedule({
     required String id,
-  })
+  }) async {
+    final resp = await _dio.delete(_targetUrl, data:{
+      'id' : id,
+    });
+  }
 }
