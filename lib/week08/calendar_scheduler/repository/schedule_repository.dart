@@ -41,5 +41,7 @@ class ScheduleRepository {
     final resp = await _dio.delete(_targetUrl, data:{
       'id' : id,
     });
+
+    return resp.data?['id'];
   }
 }
