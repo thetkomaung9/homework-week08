@@ -62,6 +62,8 @@ class ScheduleProvider extends ChangeNotifier{
 
     try{
       final savedSchedule = await repository.createSchedule(schedule: schedule);
+
+      cache.update(, update)
     }
   }
 }
