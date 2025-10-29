@@ -22,4 +22,8 @@ class ScheduleProvider extends ChangeNotifier{
   }) : super(){
      getSchedules(date: selectedDate);
   }
+
+  void getSchedules({
+    
+  })
 }
