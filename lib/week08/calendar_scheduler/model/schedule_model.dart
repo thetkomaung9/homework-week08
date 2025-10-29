@@ -41,6 +41,12 @@ class ScheduleModel {
       int? startTime,
       int? endTime,
     }) {
-      
+      return ScheduleModel(
+        id: id ?? this.id,
+        content: content ?? this.content,
+        date: date ?? this.date,
+        startTime: startTime ?? this.startTime,
+        endTime: endTime ?? this.endTime,
+      );
     }
 }
