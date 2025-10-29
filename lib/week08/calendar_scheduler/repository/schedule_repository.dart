@@ -6,5 +6,5 @@ import 'package:dio/dio.dart';
 
 class ScheduleRepository {
   final _dio= Dio();
-  final _targetUrl = 'http://'
+  final _targetUrl = 'http://&{Platform.isAndroid ? '10.0.2.2' :}'
 }
