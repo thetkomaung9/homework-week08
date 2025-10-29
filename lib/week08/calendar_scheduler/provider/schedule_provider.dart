@@ -27,5 +27,7 @@ class ScheduleProvider extends ChangeNotifier{
     required DateTime date,
   }) async {
     final resp = await repository.getSchedules(date: date);
+
+    cache.update(date, update)
   }
 }
