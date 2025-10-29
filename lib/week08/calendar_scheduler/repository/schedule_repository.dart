@@ -26,6 +26,10 @@ class ScheduleRepository {
   }
 
   Future<String> createSchedule({
-    
-  })
+    required ScheduleModel schedule,
+  }) async {
+    final json = schedule.toJson();
+
+    final resp = await _dio.post(_targetUrl, data: json);
+  }
 }
