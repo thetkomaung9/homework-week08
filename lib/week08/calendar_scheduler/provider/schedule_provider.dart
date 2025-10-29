@@ -18,7 +18,7 @@ class ScheduleProvider extends ChangeNotifier{
   Map<DateTime, List<ScheduleModel>> cache = {};
 
   ScheduleProvider({
-    required DateTime date,
+    required ,
   }) async {
     final resp = await repository.get
   }
