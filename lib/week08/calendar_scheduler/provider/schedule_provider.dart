@@ -83,6 +83,12 @@ class ScheduleProvider extends ChangeNotifier{
 
     final savedSchedule = await repository.createSchedule(schedule: schedule);
 
-    cache.update(key, update)
+    cache.update(
+      targetDate,
+      (value) => [
+        ...value,
+        schedule.copyWith(id: savedSchedule,),
+      ]..sort((a, b))
+    )
   }
 }
