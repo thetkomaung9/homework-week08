@@ -6,8 +6,11 @@ class ScheduleModel {
   final int endTime;
 
     ScheduleModel({
-      required this.id;
-      required this.content;
-      
+      required this.id,
+      required this.content,
+      required this.date,
+      required this.startTime,
+      required this.endTime,
+
     })
 }
