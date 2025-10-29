@@ -88,7 +88,13 @@ class ScheduleProvider extends ChangeNotifier{
       (value) => [
         ...value,
         schedule.copyWith(id: savedSchedule,),
-      ]..sort((a, b))
-    )
+      ]..sort((a, b) => a.startTime.compareTo(b.startTime),),
+
+      ifAbsent: () => [schedule],
+    );
+
+    notifyListeners();
   }
+
+  void dele
 }
