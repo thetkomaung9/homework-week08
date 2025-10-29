@@ -37,5 +37,21 @@ class ScheduleProvider extends ChangeNotifier{
     required ScheduleModel schedule,
   }) async {
     final targetDate = schedule.date;
+
+    final uuid =Uuid();
+
+    final tempId = uuid.v4();
+    final newSchedule = schedule.copyWith(
+      id: tempId,
+    );
+
+    cache.update(
+      targetDate,
+      (value) => [
+        ...value,
+        newSchedule,
+      ]..sort(
+        
+    )
   }
 }
