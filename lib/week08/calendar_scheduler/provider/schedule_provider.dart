@@ -69,8 +69,10 @@ class ScheduleProvider extends ChangeNotifier{
         .map((e) => e.id == tempId
         ? e.copyWith(
           id: savedSchedule,
-        ))
-      )
+        )
+        :e)
+        .toList(),
+      );
     }
   }
 }
