@@ -12,7 +12,10 @@ class ScheduleRepository {
     required DateTime date,
   }) async {
     final resp = await _dio.get(
-      
+      _targetUrl,
+      queryParameters: {
+        'date': '${date.year}${date.month.toSigned()}'
+      }
     )
   }
 }
