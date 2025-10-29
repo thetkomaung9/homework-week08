@@ -33,5 +33,6 @@ class ScheduleModel {
         'endTime' : endTime,
       };
     }
+    
     ScheduleModel
 }
