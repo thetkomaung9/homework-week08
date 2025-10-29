@@ -31,5 +31,11 @@ class ScheduleRepository {
     final json = schedule.toJson();
 
     final resp = await _dio.post(_targetUrl, data: json);
+
+    return resp.data?['id'];
   }
+
+  Future<String> deleteSchedule({
+    required String id,
+  })
 }
