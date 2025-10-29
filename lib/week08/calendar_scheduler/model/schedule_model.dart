@@ -13,4 +13,5 @@ class ScheduleModel {
       required this.endTime,
 
     })
+    
 }
