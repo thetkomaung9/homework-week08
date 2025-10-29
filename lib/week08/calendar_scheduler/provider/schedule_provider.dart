@@ -36,6 +36,6 @@ class ScheduleProvider extends ChangeNotifier{
   void createSchedule({
     required ScheduleModel schedule,
   }) async {
-    final tar
+    final targetDate = schedule.date;
   }
 }
