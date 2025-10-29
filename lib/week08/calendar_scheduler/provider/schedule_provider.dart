@@ -96,5 +96,8 @@ class ScheduleProvider extends ChangeNotifier{
     notifyListeners();
   }
 
-  void dele
+  void deleteSchedule({
+    required DateTime date,
+    required String id,
+  })
 }
