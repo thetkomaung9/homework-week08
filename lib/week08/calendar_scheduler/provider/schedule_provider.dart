@@ -66,7 +66,10 @@ class ScheduleProvider extends ChangeNotifier{
       cache.update(
         targetDate,
         (value) => value
-        .map((e) => e.id == tempId)
+        .map((e) => e.id == tempId
+        ? e.copyWith(
+          id: savedSchedule,
+        ))
       )
     }
   }
