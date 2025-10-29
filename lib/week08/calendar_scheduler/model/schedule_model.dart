@@ -20,6 +20,16 @@ class ScheduleModel {
     id = json['id'],
     content = json['content'],
     date = DateTime.parse(json['date']),
-    startTime = 
+    startTime = json['startTime'],
+    endTime = json['endTime'];
 
+
+
+    Map<String, dynamic> toJson(){
+      return {
+        'id' : id,
+        'content' : content,
+        'date' :
+      }
+    }
 }
