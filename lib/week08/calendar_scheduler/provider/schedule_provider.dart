@@ -125,9 +125,20 @@ class ScheduleProvider extends ChangeNotifier{
       cache.update(
         date,
         (value) => [...value, targetSchedule]..sort(
-          
-        )
-      )
+          (a, b) => a.startTime.compareTo(
+            b.startTime,
+          ),
+        ),
+      );
     }
+
+    notifyListeners();
+  }
+
+  void changeSelectedDate({
+    required DateTime date,
+  }) {
+    selectedDate = date;
+    notifyListeners();
   }
 }
