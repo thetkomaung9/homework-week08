@@ -55,5 +55,6 @@ class ScheduleProvider extends ChangeNotifier{
           b.startTime,
         ),
     ),
+    ifAbsent: () => [newSchedule],
   }
 }
