@@ -56,5 +56,12 @@ class ScheduleProvider extends ChangeNotifier{
         ),
     ),
     ifAbsent: () => [newSchedule],
+    );
+
+    notifyListeners();
+
+    try{
+      final savedSchedule = await repository.createSchedule(schedule: schedule);
+    }
   }
 }
