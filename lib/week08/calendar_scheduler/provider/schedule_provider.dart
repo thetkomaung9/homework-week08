@@ -28,6 +28,14 @@ class ScheduleProvider extends ChangeNotifier{
   }) async {
     final resp = await repository.getSchedules(date: date);
 
-    cache.update(date, update)
+    cache.update(date, (value) => resp, ifAbsent: () => resp);
+
+    notifyListeners();
+  }
+
+  void createSchedule({
+    required ScheduleModel schedule,
+  }) async {
+    final tar
   }
 }
