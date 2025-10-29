@@ -21,7 +21,11 @@ class ScheduleRepository {
     return resp.data.map<ScheduleModel>(
       (x) => ScheduleModel.fromJson(
         json : x,
-      )
-    )
+      ),
+    ).toList();
   }
+
+  Future<String> createSchedule({
+    
+  })
 }
