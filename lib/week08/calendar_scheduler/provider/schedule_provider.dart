@@ -106,7 +106,7 @@ class ScheduleProvider extends ChangeNotifier{
 
     cache.update(
       date,
-      (value)  => value.where((e) => !=).toList(),
+      (value)  => value.where((e) => e.id !=id).toList(),
     )
   }
 }
