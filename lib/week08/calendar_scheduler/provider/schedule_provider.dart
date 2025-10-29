@@ -99,5 +99,14 @@ class ScheduleProvider extends ChangeNotifier{
   void deleteSchedule({
     required DateTime date,
     required String id,
-  })
+  }) async {
+    final targetSchedule = cache[date]!.firstWhere(
+      (e) => e.id == id,
+    );
+
+    cache.update(
+      date,
+      (value)  => value.where((e) => !=).toList(),
+    )
+  }
 }
