@@ -51,7 +51,9 @@ class ScheduleProvider extends ChangeNotifier{
         ...value,
         newSchedule,
       ]..sort(
-        
-    )
+        (a, b) => a.startTime.compareTo(
+          b.startTime,
+        ),
+    ),
   }
 }
