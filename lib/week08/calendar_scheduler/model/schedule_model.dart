@@ -29,7 +29,7 @@ class ScheduleModel {
       return {
         'id' : id,
         'content' : content,
-        'date' :
+        'date' :'${date.year}${date.month.toString().padLeft(2, '0')}'
       }
     }
 }
